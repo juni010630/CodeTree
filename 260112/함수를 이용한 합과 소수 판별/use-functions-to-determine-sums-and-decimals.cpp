@@ -24,7 +24,7 @@ int main() {
     cin >> a >> b;
 
     int cnt{};
-    while(a++ != b) {
+    while(a++ <= b) {
         if (IsPrime(a) && IsSumEven(a)) cnt++;
     }
 
