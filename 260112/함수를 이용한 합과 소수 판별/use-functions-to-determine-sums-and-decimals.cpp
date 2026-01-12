@@ -17,6 +17,7 @@ bool IsSumEven(int n) {
         sum += n % 10;
         n /= 10;
     }
+    cout << sum << endl;
     return !(sum%2);
 }
 
@@ -24,8 +25,9 @@ int main() {
     cin >> a >> b;
 
     int cnt{};
-    while(a++ <= b) {
+    while(a <= b) {
         if (IsPrime(a) && IsSumEven(a)) cnt++;
+        a++;
     }
 
     cout << cnt << endl;
