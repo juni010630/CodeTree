@@ -17,7 +17,6 @@ bool IsSumEven(int n) {
         sum += n % 10;
         n /= 10;
     }
-    cout << sum << endl;
     return !(sum%2);
 }
 
