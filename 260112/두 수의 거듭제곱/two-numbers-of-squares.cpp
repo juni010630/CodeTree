@@ -1,13 +1,18 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int a, b;
 
+int power(int a, int b) {
+    int ret{1};
+    while(b--) ret *= a;
+    return ret;
+}
+
 int main() {
     cin >> a >> b;
 
-    cout << pow(a,b) << endl;
+    cout << power(a,b) << endl;
     return 0;
 }
