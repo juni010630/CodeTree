@@ -2,16 +2,11 @@
 
 using namespace std;
 
-int y;
-
-bool IsYear(int i) {
-    return !(i % 4) && ((i % 100) || !(i % 400));
-}
-
 int main() {
-    cin >> y;
+    int i{};
+    cin >> i;
 
-    cout << boolalpha << IsYear(y) << endl;
+    cout << boolalpha << (!(i % 4) && ((i % 100) || !(i % 400))) << endl;
 
     return 0;
 }
