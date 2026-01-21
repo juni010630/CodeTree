@@ -6,7 +6,7 @@ int n;
 int arr[100];
 
 int func(int N) {
-    if (N == 0) return arr[N];
+    if (N == 0) return arr[0];
     
     if (arr[N] > func(N-1)) return arr[N];
     return func(N-1);
